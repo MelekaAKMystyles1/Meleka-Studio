@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meleka Creation Arts — free ICT and Cyber Security courses with multilingual learning support.">
+  <meta name="theme-color" content="#08111f">
+  <title>Meleka Creation Arts | Learn ICT & Cyber Security Free</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Meleka Creation Arts home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Meleka <b>Creation Arts</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#courses" data-i18n="navCourses">Courses</a>
+        <a href="#benefits" data-i18n="navBenefits">Benefits</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <select id="language" aria-label="Choose language">
+          <option value="en">English</option><option value="ny">Chichewa</option><option value="sw">Swahili</option>
+          <option value="fr">Français</option><option value="pt">Português</option><option value="es">Español</option>
+        </select>
+        <a class="nav-cta" href="#courses" data-i18n="startLearning">Start learning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">FREE • OPEN TO EVERYONE • LEARN AT YOUR PACE</span></div>
+          <h1 data-i18n="heroTitle">Build digital skills.<br><em>Protect the future.</em></h1>
+          <p class="hero-text" data-i18n="heroText">Learn ICT and Cyber Security from beginner to advanced — with clear lessons, practical thinking and multilingual support, completely free.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses" data-i18n="exploreCourses">Explore free courses <span>→</span></a>
+            <a class="btn btn-ghost" href="#about" data-i18n="howItWorks">How it works</a>
+          </div>
+          <div class="trust-row"><span>✓ No tuition</span><span>✓ Beginner friendly</span><span>✓ Mobile ready</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Cyber security learning illustration">
+          <div class="terminal-card">
+            <div class="terminal-top"><span></span><span></span><span></span><small>mele ka@learning:~</small></div>
+            <div class="terminal-body"><p><b>$</b> start-learning --free</p><p class="muted">Loading your digital skills journey…</p><p><span class="green">✓</span> ICT fundamentals</p><p><span class="green">✓</span> Cyber security basics</p><p><span class="green">✓</span> Safe online habits</p><p><span class="green">✓</span> Practical projects</p><p class="cursor"><b>$</b> <span></span></p></div>
+          </div>
+          <div class="shield"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 53 13v16c0 14-8.9 24.8-21 30C19.9 53.8 11 43 11 29V13L32 5Z"/><path d="m21 32 7 7 15-16"/></svg></div>
+          <div class="float-card card-a"><strong>100%</strong><span>Free learning</span></div>
+          <div class="float-card card-b"><strong>6+</strong><span>Languages</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Platform highlights"><div class="container stats-grid"><div><strong>01</strong><span>Learn from the basics</span></div><div><strong>02</strong><span>Practice real-world skills</span></div><div><strong>03</strong><span>Learn in your language</span></div><div><strong>04</strong><span>Keep learning for free</span></div></div></section>
+
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-head"><div><span class="kicker">LEARNING PATH</span><h2 data-i18n="coursesTitle">Your digital skills journey starts here.</h2></div><p data-i18n="coursesIntro">Structured learning paths designed to make complex technology easier to understand and apply.</p></div>
+        <div class="course-grid">
+          <article class="course-card featured"><div class="course-icon">01</div><span class="level">FOUNDATION</span><h3>ICT Essentials</h3><p>Computer basics, operating systems, files, internet, productivity tools and digital literacy.</p><div class="course-bottom"><span>Beginner</span><button class="link-btn" onclick="showCourse('ICT Essentials')">View path →</button></div></article>
+          <article class="course-card"><div class="course-icon">02</div><span class="level">SECURITY</span><h3>Cyber Security Basics</h3><p>Threats, passwords, phishing awareness, privacy, networks and responsible digital protection.</p><div class="course-bottom"><span>Beginner → Intermediate</span><button class="link-btn" onclick="showCourse('Cyber Security Basics')">View path →</button></div></article>
+          <article class="course-card"><div class="course-icon">03</div><span class="level">PRACTICAL</span><h3>Digital Safety</h3><p>Build safer habits for accounts, devices, social media and everyday online activity.</p><div class="course-bottom"><span>All levels</span><button class="link-btn" onclick="showCourse('Digital Safety')">View path →</button></div></article>
+          <article class="course-card"><div class="course-icon">04</div><span class="level">NEXT STEP</span><h3>Cyber Security Path</h3><p>Explore networking concepts, security thinking, ethical practice and career-ready foundations.</p><div class="course-bottom"><span>Intermediate</span><button class="link-btn" onclick="showCourse('Cyber Security Path')">View path →</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="benefits">
+      <div class="container"><div class="section-head light"><div><span class="kicker">WHY MELEKA</span><h2 data-i18n="benefitsTitle">Learning that respects your time, language and budget.</h2></div><p data-i18n="benefitsIntro">No expensive gatekeeping. Just useful knowledge presented simply, so more people can participate in the digital world.</p></div>
+        <div class="benefit-grid">
+          <div class="benefit"><span>↗</span><h3>Free by design</h3><p>Core learning is built to stay accessible without tuition barriers.</p></div>
+          <div class="benefit"><span>文</span><h3>Multilingual</h3><p>Switch the interface and learning experience to languages that work for you.</p></div>
+          <div class="benefit"><span>⌁</span><h3>Practical thinking</h3><p>Learn concepts through everyday examples, scenarios and guided practice.</p></div>
+          <div class="benefit"><span>▣</span><h3>Mobile-first</h3><p>Designed for learners who may be studying primarily from a phone.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about"><div class="container about-grid"><div class="about-panel"><span class="kicker">ABOUT THE MISSION</span><h2>Technology knowledge should travel across borders.</h2><p>Meleka Creation Arts is building a simple learning home for people who want practical ICT and Cyber Security knowledge without needing a large budget or a perfect starting point.</p><p>The goal is bigger than one course: make digital education easier to understand, easier to translate and easier to access from a phone.</p><div class="mission-line"><span></span><b>Learn. Practice. Protect. Share.</b></div></div><div class="quote-panel"><div class="quote-mark">“</div><blockquote>Start where you are. Learn one concept. Practice it. Then help someone else understand it.</blockquote><span>— Meleka Creation Arts learning philosophy</span></div></div></section>
+
+    <section class="section testimonials" id="testimonials"><div class="container"><div class="center-head"><span class="kicker">LEARNER EXPERIENCE</span><h2>Built for real people, not perfect students.</h2><p>These are experience principles for the community; verified learner stories can be added as the platform grows.</p></div><div class="testimonial-grid"><article><div class="stars">★★★★★</div><p>“Clear, simple explanations make it easier to start without feeling lost.”</p><strong>Beginner learner</strong><span>Community profile</span></article><article><div class="stars">★★★★★</div><p>“Learning in a familiar language can make technical ideas feel much more approachable.”</p><strong>Multilingual learner</strong><span>Community profile</span></article><article><div class="stars">★★★★★</div><p>“The focus on practical digital safety turns knowledge into habits I can use every day.”</p><strong>Digital learner</strong><span>Community profile</span></article></div></div></section>
+
+    <section class="section faq" id="faq"><div class="container faq-grid"><div><span class="kicker">FAQ</span><h2>Questions before you start?</h2><p>Here are the essentials. More course-specific answers can be added as new lessons launch.</p><a class="text-link" href="#cta">Ready? Start learning →</a></div><div class="faq-list">
+      <details open><summary>Is the learning really free?<span>+</span></summary><p>Yes. The platform is designed around free access to core ICT and Cyber Security learning.</p></details>
+      <details><summary>Do I need previous ICT knowledge?<span>+</span></summary><p>No. The foundation path starts with beginner concepts and gradually introduces more technical ideas.</p></details>
+      <details><summary>Can I learn from a phone?<span>+</span></summary><p>Yes. The website is mobile-first, with lightweight layouts designed for smaller screens and slower connections.</p></details>
+      <details><summary>Which languages are supported?<span>+</span></summary><p>The interface currently demonstrates English, Chichewa, Swahili, French, Portuguese and Spanish. Course translation can expand over time.</p></details>
+      <details><summary>Does this teach hacking?<span>+</span></summary><p>The focus is defensive and educational: understanding threats, protecting systems and practicing cybersecurity responsibly and legally.</p></details>
+    </div></div></section>
+
+    <section class="cta" id="cta"><div class="container cta-inner"><div><span class="kicker">YOUR NEXT STEP</span><h2 data-i18n="ctaTitle">Turn curiosity into digital confidence.</h2><p data-i18n="ctaText">Choose a learning path and start building skills today — free, practical and designed for everyone.</p></div><a class="btn btn-light" href="#courses" data-i18n="ctaButton">Start learning free <span>→</span></a></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>Meleka <b>Creation Arts</b></span></a><p>Free digital learning for a more confident, safer online world.</p></div><div class="footer-links"><a href="#courses">Courses</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#top">Back to top ↑</a></div><div class="copyright">© 2026 Meleka Creation Arts. Built for learning.</div></div></footer>
+
+  <div class="modal" id="courseModal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" onclick="closeCourse()" aria-label="Close">×</button><span class="kicker">LEARNING PATH</span><h2 id="modalTitle"></h2><p id="modalText"></p><a class="btn btn-primary" href="#cta" onclick="closeCourse()">Start this path →</a></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
