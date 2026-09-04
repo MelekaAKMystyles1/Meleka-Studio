@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meleka Creation Arts — free ICT and Cyber Security courses with multilingual learning support.">
+  <meta name="description" content="Meleka For All — free ICT and Cyber Security courses, multilingual learning, digital safety and creative tools.">
   <meta name="theme-color" content="#08111f">
-  <title>Meleka Creation Arts | Learn ICT & Cyber Security Free</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>Meleka For All | Free Digital Learning</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,9 +18,9 @@
 <body>
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Meleka Creation Arts home">
+      <a class="brand" href="#top" aria-label="Meleka For All home">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span>Meleka <b>Creation Arts</b></span>
+        <span>Meleka <b>For All</b></span>
       </a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="Main navigation">
@@ -84,7 +88,7 @@
       </div>
     </section>
 
-    <section class="section about" id="about"><div class="container about-grid"><div class="about-panel"><span class="kicker">ABOUT THE MISSION</span><h2>Technology knowledge should travel across borders.</h2><p>Meleka Creation Arts is building a simple learning home for people who want practical ICT and Cyber Security knowledge without needing a large budget or a perfect starting point.</p><p>The goal is bigger than one course: make digital education easier to understand, easier to translate and easier to access from a phone.</p><div class="mission-line"><span></span><b>Learn. Practice. Protect. Share.</b></div></div><div class="quote-panel"><div class="quote-mark">“</div><blockquote>Start where you are. Learn one concept. Practice it. Then help someone else understand it.</blockquote><span>— Meleka Creation Arts learning philosophy</span></div></div></section>
+    <section class="section about" id="about"><div class="container about-grid"><div class="about-panel"><span class="kicker">ABOUT THE MISSION</span><h2>Technology knowledge should travel across borders.</h2><p>Meleka For All is building a simple learning home for people who want practical ICT and Cyber Security knowledge without needing a large budget or a perfect starting point.</p><p>The goal is bigger than one course: make digital education easier to understand, easier to translate and easier to access from a phone.</p><div class="mission-line"><span></span><b>Learn. Practice. Protect. Share.</b></div></div><div class="quote-panel"><div class="quote-mark">“</div><blockquote>Start where you are. Learn one concept. Practice it. Then help someone else understand it.</blockquote><span>— Meleka For All learning philosophy</span></div></div></section>
 
     <section class="section testimonials" id="testimonials"><div class="container"><div class="center-head"><span class="kicker">LEARNER EXPERIENCE</span><h2>Built for real people, not perfect students.</h2><p>These are experience principles for the community; verified learner stories can be added as the platform grows.</p></div><div class="testimonial-grid"><article><div class="stars">★★★★★</div><p>“Clear, simple explanations make it easier to start without feeling lost.”</p><strong>Beginner learner</strong><span>Community profile</span></article><article><div class="stars">★★★★★</div><p>“Learning in a familiar language can make technical ideas feel much more approachable.”</p><strong>Multilingual learner</strong><span>Community profile</span></article><article><div class="stars">★★★★★</div><p>“The focus on practical digital safety turns knowledge into habits I can use every day.”</p><strong>Digital learner</strong><span>Community profile</span></article></div></div></section>
 
@@ -99,9 +103,10 @@
     <section class="cta" id="cta"><div class="container cta-inner"><div><span class="kicker">YOUR NEXT STEP</span><h2 data-i18n="ctaTitle">Turn curiosity into digital confidence.</h2><p data-i18n="ctaText">Choose a learning path and start building skills today — free, practical and designed for everyone.</p></div><a class="btn btn-light" href="#courses" data-i18n="ctaButton">Start learning free <span>→</span></a></div></section>
   </main>
 
-  <footer><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>Meleka <b>Creation Arts</b></span></a><p>Free digital learning for a more confident, safer online world.</p></div><div class="footer-links"><a href="#courses">Courses</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#top">Back to top ↑</a></div><div class="copyright">© 2026 Meleka Creation Arts. Built for learning.</div></div></footer>
+  <footer><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span>Meleka <b>For All</b></span></a><p>Free digital learning for a more confident, safer online world.</p></div><div class="footer-links"><a href="#courses">Courses</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#top">Back to top ↑</a></div><div class="copyright">© 2026 Meleka For All. Built for learning.</div></div></footer>
 
   <div class="modal" id="courseModal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" onclick="closeCourse()" aria-label="Close">×</button><span class="kicker">LEARNING PATH</span><h2 id="modalTitle"></h2><p id="modalText"></p><a class="btn btn-primary" href="#cta" onclick="closeCourse()">Start this path →</a></div></div>
   <script src="script.js"></script>
+  <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
 </body>
 </html>
